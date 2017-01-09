@@ -1,0 +1,14 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon version="0.0.4" id="repository.thehighway" name="TheHighway's XBMC Addons" provider-name="The[COLOR tan]Highway[/COLOR]">
+	<extension point="xbmc.addon.repository" name="TheHighway's XBMC Addons">
+		<info compressed="false">http://raw.github.com/jdollar/repository/master/addons.xml</info>
+		<checksum>http://raw.github.com/jdollar/repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/jdollar/repository/master/pluginStore/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>jdollar's Addons</summary>
+		<description>Repository that houses jdollar's addons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
