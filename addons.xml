@@ -21,6 +21,24 @@
         <email />
         <source />
     </extension>
+</addon><addon id="script.module.cfscraper" name="cfscraper" provider-name="jdollar" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="requests" version="2.9.1" />
+    <import addon="js2py" version="1.0.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Scraper that bypasses cloudflare's anti bot security</summary>
+    <description>Packed for Kodi from https://github.com/Anorov/cloudflare-scrape</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://github.com/Anorov/cloudflare-scrape</website>
+    <source>http://github.com/Anorov/cloudflare-scrape</source>
+    <email>ionizedwarhead10 AT gmail.com</email>
+  </extension>
 </addon><addon id="script.module.js2py" name="js2py" provider-name="jdollar" version="1.0.0">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
