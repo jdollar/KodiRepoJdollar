@@ -1,5 +1,75 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.kissanimedev" name="Kiss Anime Dev" provider-name="jdollar" version="0.1.0">
+<addons><addon id="script.module.cfscrape" name="cfscrape" provider-name="jdollar" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.requests" version="2.9.1" />
+    <import addon="script.module.js2py" version="1.0.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Scraper that bypasses cloudflare's anti bot security</summary>
+    <description>Packed for Kodi from https://github.com/Anorov/cloudflare-scrape</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://github.com/Anorov/cloudflare-scrape</website>
+    <source>http://github.com/Anorov/cloudflare-scrape</source>
+    <email>ionizedwarhead10 AT gmail.com</email>
+  </extension>
+</addon><addon id="script.module.js2py" name="js2py" provider-name="jdollar" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.pyjsparser" version="1.0.0" />
+    <import addon="script.module.six" version="1.0.0" />
+    <import addon="script.module.tzlocal" version="1.0.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://github.com/PiotrDabkowski/Js2Py</website>
+    <source>https://github.com/PiotrDabkowski/Js2Py</source>
+    <email>ionizedwarhead10 AT gmail.com</email>
+  </extension>
+</addon><addon id="script.module.pytz" name="pytz" provider-name="jdollar" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>World timezone definitions for python</summary>
+    <description>Packed for Kodi from https://github.com/newvem/pytz.git</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://github.com/newvem/pytz</website>
+    <source>https://github.com/newvem/pytz</source>
+    <email>ionizedwarhead10 AT gmail.com</email>
+  </extension>
+</addon><addon id="script.module.tzlocal" name="tzlocal" provider-name="jdollar" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.pytz" version="1.0.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python Module to find out the current time zone</summary>
+    <description>Packed for Kodi from https://github.com/regebro/tzlocal</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://github.com/regebro/tzlocal</website>
+    <source>https://github.com/regebro/tzlocal</source>
+    <email>ionizedwarhead10 AT gmail.com</email>
+  </extension>
+</addon><addon id="plugin.video.kissanimedev" name="Kiss Anime Dev" provider-name="jdollar" version="0.1.0">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
         <import addon="script.module.beautifulsoup4" version="4.3.2" />
@@ -22,41 +92,6 @@
         <email />
         <source />
     </extension>
-</addon><addon id="script.module.cfscrape" name="cfscrape" provider-name="jdollar" version="1.0.0">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0" />
-    <import addon="script.module.requests" version="2.9.1" />
-    <import addon="script.module.js2py" version="1.0.0" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Scraper that bypasses cloudflare's anti bot security</summary>
-    <description>Packed for Kodi from https://github.com/Anorov/cloudflare-scrape</description>
-    <platform>all</platform>
-    <language />
-    <license>MIT</license>
-    <forum />
-    <website>https://github.com/Anorov/cloudflare-scrape</website>
-    <source>http://github.com/Anorov/cloudflare-scrape</source>
-    <email>ionizedwarhead10 AT gmail.com</email>
-  </extension>
-</addon><addon id="script.module.js2py" name="js2py" provider-name="jdollar" version="1.0.0">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0" />
-    <import addon="script.module.pyjsparser" version="1.0.0" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Pure Python JavaScript Translator/Interpreter</summary>
-    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
-    <platform>all</platform>
-    <language />
-    <license>MIT</license>
-    <forum />
-    <website>https://github.com/PiotrDabkowski/Js2Py</website>
-    <source>https://github.com/PiotrDabkowski/Js2Py</source>
-    <email>ionizedwarhead10 AT gmail.com</email>
-  </extension>
 </addon><addon id="script.module.pyjsparser" name="pyjsparser" provider-name="jdollar" version="1.0.0">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
@@ -71,6 +106,22 @@
     <forum />
     <website>https://github.com/PiotrDabkowski/pyjsparser</website>
     <source>https://github.com/PiotrDabkowski/pyjsparser</source>
+    <email>ionizedwarhead10 AT gmail.com</email>
+  </extension>
+</addon><addon id="script.module.six" name="six" provider-name="jdollar" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/benjaminp/six</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://github.com/benjaminp/six</website>
+    <source>https://github.com/benjaminp/six</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
 </addon></addons>
