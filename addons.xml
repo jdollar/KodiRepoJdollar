@@ -1,5 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="script.module.cfscrape" name="cfscrape" provider-name="jdollar" version="1.0.0">
+<addons><addon id="plugin.video.kissanimedev" name="Kiss Anime Dev" provider-name="jdollar" version="0.1.0">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="script.module.beautifulsoup4" version="4.3.2" />
+        <import addon="script.module.js2py" version="1.0.0" />
+        <import addon="script.module.cfscrape" version="1.0.0" />
+        <import addon="script.module.t0mm0.common" version="2.1.1" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    	<summary lang="en">Provides a kodi addon that is capable of accessing the kissanime site</summary>
+        <description lang="en">Anime Videos from KissAnime</description>
+        <disclaimer lang="en" />
+        <language>en</language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum />
+        <website />
+        <email />
+        <source />
+    </extension>
+</addon><addon id="script.module.cfscrape" name="cfscrape" provider-name="jdollar" version="1.0.0">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.requests" version="2.9.1" />
@@ -17,23 +40,20 @@
     <source>http://github.com/Anorov/cloudflare-scrape</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
-</addon><addon id="script.module.js2py" name="js2py" provider-name="jdollar" version="1.0.0">
+</addon><addon id="script.module.pyjsparser" name="pyjsparser" provider-name="jdollar" version="1.0.0">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
-    <import addon="script.module.pyjsparser" version="1.0.0" />
-    <import addon="script.module.six" version="1.0.0" />
-    <import addon="script.module.tzlocal" version="1.0.0" />
   </requires>
   <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
     <summary>Pure Python JavaScript Translator/Interpreter</summary>
-    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
     <platform>all</platform>
     <language />
     <license>MIT</license>
     <forum />
-    <website>https://github.com/PiotrDabkowski/Js2Py</website>
-    <source>https://github.com/PiotrDabkowski/Js2Py</source>
+    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
+    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
 </addon><addon id="script.module.pytz" name="pytz" provider-name="jdollar" version="1.0.0">
@@ -69,43 +89,23 @@
     <source>https://github.com/regebro/tzlocal</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
-</addon><addon id="plugin.video.kissanimedev" name="Kiss Anime Dev" provider-name="jdollar" version="0.1.0">
-    <requires>
-        <import addon="xbmc.python" version="2.25.0" />
-        <import addon="script.module.beautifulsoup4" version="4.3.2" />
-        <import addon="script.module.js2py" version="1.0.0" />
-        <import addon="script.module.cfscrape" version="1.0.0" />
-        <import addon="script.module.t0mm0.common" version="2.1.1" />
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-    	<summary lang="en">Provides a kodi addon that is capable of accessing the kissanime site</summary>
-        <description lang="en">Anime Videos from KissAnime</description>
-        <disclaimer lang="en" />
-        <language>en</language>
-        <platform>all</platform>
-        <license>MIT</license>
-        <forum />
-        <website />
-        <email />
-        <source />
-    </extension>
-</addon><addon id="script.module.pyjsparser" name="pyjsparser" provider-name="jdollar" version="1.0.0">
+</addon><addon id="script.module.js2py" name="js2py" provider-name="jdollar" version="1.0.0">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.pyjsparser" version="1.0.0" />
+    <import addon="script.module.six" version="1.0.0" />
+    <import addon="script.module.tzlocal" version="1.0.0" />
   </requires>
   <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
     <summary>Pure Python JavaScript Translator/Interpreter</summary>
-    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
     <platform>all</platform>
     <language />
     <license>MIT</license>
     <forum />
-    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
-    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
+    <website>https://github.com/PiotrDabkowski/Js2Py</website>
+    <source>https://github.com/PiotrDabkowski/Js2Py</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
 </addon><addon id="script.module.six" name="six" provider-name="jdollar" version="1.0.0">
