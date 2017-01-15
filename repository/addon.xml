@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon version="0.0.1" id="repository.jdollar" name="jdollar's Addons" provider-name="jdollar">
+<addon version="0.0.2" id="repository.jdollar" name="jdollar's Addons" provider-name="jdollar">
 	<extension point="xbmc.addon.repository" name="jdollar's Addons">
 		<info compressed="false">http://raw.github.com/jdollarKodi/repository.jdollar/master/addons.xml</info>
 		<checksum>http://raw.github.com/jdollarKodi/repository.jdollar/master/addons.xml.md5</checksum>
