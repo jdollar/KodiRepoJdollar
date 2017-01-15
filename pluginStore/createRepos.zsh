@@ -18,5 +18,9 @@ repoPaths=()
 for repo in $repos; do repoPaths+=$KODI_REPO_DIR$repo; done
 python create_repository.py $repoPaths
 
-rm -rf ../addons.xml*
+if [[ -f ../addons.xml ]]; then
+  rm -rf ../addons.xml*
+fi
+
 mv addons.xml* ..
+

@@ -1,10 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.kissanimedev" name="Kiss Anime Dev" provider-name="jdollar" version="0.1.0">
+<addons><addon id="plugin.video.kissanimedev" name="Kiss Anime Dev" provider-name="jdollar" version="0.1.1">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
         <import addon="script.module.beautifulsoup4" version="4.3.2" />
-        <import addon="script.module.js2py" version="1.0.0" />
-        <import addon="script.module.cfscrape" version="1.0.0" />
+        <import addon="script.module.cfscrape" version="1.6.8" />
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
@@ -43,11 +42,11 @@
         <email />
         <source />
     </extension>
-</addon><addon id="script.module.cfscrape" name="cfscrape" provider-name="jdollar" version="1.0.0">
+</addon><addon id="script.module.cfscrape" name="cfscrape" provider-name="jdollar" version="1.6.8">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.requests" version="2.9.1" />
-    <import addon="script.module.js2py" version="1.0.0" />
+    <import addon="script.module.js2py" version="0.4.3" />
   </requires>
   <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
@@ -61,12 +60,12 @@
     <source>http://github.com/Anorov/cloudflare-scrape</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
-</addon><addon id="script.module.js2py" name="js2py" provider-name="jdollar" version="1.0.0">
+</addon><addon id="script.module.js2py" name="js2py" provider-name="jdollar" version="0.4.3">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.six" version="1.9.0" />
-    <import addon="script.module.pyjsparser" version="1.0.0" />
-    <import addon="script.module.tzlocal" version="1.0.0" />
+    <import addon="script.module.pyjsparser" version="2.4.5" />
+    <import addon="script.module.tzlocal" version="1.3.1" />
   </requires>
   <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
@@ -80,7 +79,7 @@
     <source>https://github.com/PiotrDabkowski/Js2Py</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
-</addon><addon id="script.module.pyjsparser" name="pyjsparser" provider-name="jdollar" version="1.0.0">
+</addon><addon id="script.module.pyjsparser" name="pyjsparser" provider-name="jdollar" version="2.4.5">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
   </requires>
@@ -96,7 +95,7 @@
     <source>https://github.com/PiotrDabkowski/pyjsparser</source>
     <email>ionizedwarhead10 AT gmail.com</email>
   </extension>
-</addon><addon id="script.module.tzlocal" name="tzlocal" provider-name="jdollar" version="1.0.0">
+</addon><addon id="script.module.tzlocal" name="tzlocal" provider-name="jdollar" version="1.3.1">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.pytz" version="2014.2" />
