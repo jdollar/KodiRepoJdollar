@@ -12,7 +12,7 @@ repos=(
   script.module.tzlocal
 )
 
-for repo in $repos; do rm -rf $PLUGIN_STORE_DIR/$repo; done
+#for repo in $repos; do rm -rf $PLUGIN_STORE_DIR/$repo; done
 
 repoPaths=()
 for repo in $repos; do repoPaths+=$KODI_REPO_DIR$repo; done
