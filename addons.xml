@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.watchkissanime" name="Watch Kiss Anime" provider-name="jdollar" version="0.3.0">
+<addons><addon id="plugin.video.watchkissanime" name="Watch Kiss Anime" provider-name="jdollar" version="0.4.0">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
         <import addon="xbmc.gui" version="5.12.0" />
         <import addon="script.module.beautifulsoup4" version="4.3.2" />
         <import addon="script.module.cfscrape" version="1.6.8" />
+        <import addon="script.module.urlresolver" version="2.10.0" />
+        <import addon="script.module.t0mm0.common" version="2.1.1" />
     </requires>
     <extension library="addon.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
@@ -13,7 +15,7 @@
     	<summary lang="en">Provides a kodi addon that is capable of accessing the kissanime site</summary>
         <description lang="en">Anime Videos from KissAnime</description>
         <disclaimer lang="en" />
-        <language>en</language>
+        <language />
         <platform>all</platform>
         <license>MIT</license>
         <forum />
